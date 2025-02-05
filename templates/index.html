@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go + HTMX</title>
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+</head>
+<body>
+    <h1>HTMX + Go Echo Primer</h1>
+    
+    <button hx-get="/message" hx-target="#message-box" hx-swap="innerHTML">
+        Učitaj poruku
+    </button>
+
+    <div id="message-box">
+        <!-- Ovdje će se učitati poruka -->
+    </div>
+</body>
+</html>
